@@ -1,0 +1,119 @@
+body {
+  font-family: "Raleway";
+}
+
+.container {
+  margin: 12px 20px;
+
+  @media (min-width: 992px) {
+    margin: 12px 82px;
+  }
+}
+
+.header-info {
+  border-bottom: #000000 1px solid;
+  padding-bottom: 12px;
+}
+.logo-group {
+  gap: 60px;
+}
+
+.logo-social {
+  gap: 18px;
+}
+
+.contacts-language {
+  gap: 40px;
+}
+
+.logo-contacts {
+  gap: 35px;
+  font-size: 18px;
+}
+
+.navbar {
+  font-size: 20px;
+
+  &-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &-icon {
+      background-image: none;
+      width: 24px;
+      height: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & span {
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.nav__link {
+  color: #000000;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: #1a7df0;
+  }
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  color: #1a7df0;
+  background-color: transparent;
+}
+
+.dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  padding-right: 32px;
+
+  &:hover {
+    color: #1a7df0;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.8 10.2L12.3 17.7L19.8 10.2' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      no-repeat center;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  &:hover::before {
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.8 10.2L12.3 17.7L19.8 10.2' stroke='%230d6efd' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      no-repeat center;
+  }
+
+  &.show::before {
+    transform: translateY(-50%) rotate(180deg);
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.8 10.2L12.3 17.7L19.8 10.2' stroke='%230d6efd' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      no-repeat center;
+  }
+}
