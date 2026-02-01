@@ -19,77 +19,69 @@
     <title>Українська Асоціація «Джерело»</title>
   </head>
   <body>
-    <header class="header container">
-      <div
-        class="header-info d-flex align-items-center justify-content-between"
-      >
-        <div class="logo-group d-flex align-items-center">
-          <div>
-            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+    <div class="decorated-bg">
+      <header class="header container">
+        <div
+          class="d-none header-info d-xl-flex align-items-center justify-content-between"
+        >
+          <div class="logo-group d-flex align-items-center">
+            <div>
+              <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+            </div>
+            <div class="logo-social d-flex">
+              <a href="#"
+                ><img src="./img/icon-whatsapp.png" alt="Whatsapp"
+              /></a>
+              <a href="#"
+                ><img src="./img/icon-facebook.png" alt="Facebook"
+              /></a>
+              <a href="#"><img src="./img/icon-insta.png" alt="Instagram" /></a>
+              <a href="#"
+                ><img src="./img/icon-telegram.png" alt="Telegram"
+              /></a>
+              <a href="#"><img src="./img/icon-youtube.png" alt="YouTube" /></a>
+            </div>
           </div>
-          <div class="logo-social d-flex">
-            <a href="#"><img src="./img/icon-whatsapp.png" alt="Whatsapp" /></a>
-            <a href="#"><img src="./img/icon-facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="./img/icon-insta.png" alt="Instagram" /></a>
-            <a href="#"><img src="./img/icon-telegram.png" alt="Telegram" /></a>
-            <a href="#"><img src="./img/icon-youtube.png" alt="YouTube" /></a>
+
+          <div class="d-flex align-items-center contacts-language">
+            <div class="logo-contacts d-flex">
+              <a href="#" class="text-decoration-none text-black"
+                ><img src="./img/icon-tel.png" alt="Телефон" /> +34 641 35 22
+                51</a
+              >
+              <a href="#" class="text-decoration-none text-black"
+                ><img src="./img/icon-place.png" alt="Містознаходження" />Carrer
+                de Béjar, 38, Barcelona</a
+              >
+            </div>
+            <div class="dropdown language">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                UKR
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ESP</a></li>
+                <li><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="d-flex align-items-center contacts-language">
-          <div class="logo-contacts d-flex">
-            <a href="#" class="text-decoration-none text-black"
-              ><img src="./img/icon-tel.png" alt="Телефон" /> +34 641 35 22
-              51</a
-            >
-            <a href="#" class="text-decoration-none text-black"
-              ><img src="./img/icon-place.png" alt="Містознаходження" />Carrer
-              de Béjar, 38, Barcelona</a
-            >
-          </div>
-          <div class="dropdown language">
-            <button
-              class="dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              UKR
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">ESP</a></li>
-              <li><a class="dropdown-item" href="#">EN</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <nav class="navbar navbar-expand-lg w-100">
-        <div class="container-fluid justify-content-end">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
-
+        <nav class="navbar d-xl-flex justify-content-xl-center w-100">
           <div
-            class="collapse navbar-collapse justify-content-center"
-            id="mainNav"
+            class="d-flex justify-content-between justify-content-xl-center align-items-center w-100"
           >
+            <div class="d-xl-none">
+              <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+            </div>
             <ul
-              class="nav__list d-flex flex-column flex-lg-row justify-content-center fs-lg-5 m-0 p-2 list-unstyled gap-4 gap-lg-5"
+              class="nav__list d-none d-xl-flex flex-xl-row align-items-center justify-content-center fs-xl-5 m-0 p-2 list-unstyled gap-4 gap-xl-5"
             >
-              <li class="nav__item dropdown d-none d-lg-block">
+              <li class="nav__item dropdown d-none d-xl-block">
                 <a
                   class="nav__link dropdown-toggle text-decoration-none"
                   data-bs-toggle="dropdown"
@@ -127,27 +119,41 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav__item d-lg-none">
+              <li class="nav__item d-xl-none">
+                <div class="dropdown language">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    UKR
+                  </button>
+                  <ul class="dropdown-menu d-xl-none">
+                    <li><a class="dropdown-item" href="#">ESP</a></li>
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </div>
                 <a class="nav__link text-decoration-none" href="#"
                   >Гуманітарний центр</a
                 >
               </li>
-              <li class="nav__item d-lg-none">
+              <li class="nav__item d-xl-none">
                 <a class="nav__link text-decoration-none" href="#"
                   >Український центр у Барселоні
                 </a>
               </li>
-              <li class="nav__item d-lg-none">
+              <li class="nav__item d-xl-none">
                 <a class="nav__link text-decoration-none" href="#"
                   >Бібліотека</a
                 >
               </li>
-              <li class="nav__item d-lg-none">
+              <li class="nav__item d-xl-none">
                 <a class="nav__link text-decoration-none" href="#"
                   >Школа та садочок</a
                 >
               </li>
-              <li class="nav__item d-lg-none">
+              <li class="nav__item d-xl-none">
                 <a class="nav__link text-decoration-none" href="#"
                   >Український сад
                 </a>
@@ -173,11 +179,171 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+            <div>
+              <button
+                class="navbar-toggler d-xl-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </button>
 
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="mainNav"
+              >
+                <ul
+                  class="nav__list d-flex flex-column flex-xl-row justify-content-center fs-xl-5 m-0 p-2 list-unstyled gap-4 gap-xl-5"
+                >
+                  <li class="nav__item dropdown d-none d-xl-block">
+                    <a
+                      class="nav__link dropdown-toggle text-decoration-none"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      Наші напрямки
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item text-decoration-none" href="#"
+                          >Гуманітарний центр</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-decoration-none" href="#"
+                          >Український центр у Барселоні</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-decoration-none" href="#"
+                          >Бібліотека</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-decoration-none" href="#"
+                          >Школа та садочок</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-decoration-none" href="#"
+                          >Український сад</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav__item d-xl-none">
+                    <div class="dropdown language">
+                      <button
+                        class="dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        UKR
+                      </button>
+                      <ul class="dropdown-menu d-xl-none">
+                        <li><a class="dropdown-item" href="#">ESP</a></li>
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                      </ul>
+                    </div>
+                    <a class="nav__link text-decoration-none" href="#"
+                      >Гуманітарний центр</a
+                    >
+                  </li>
+                  <li class="nav__item d-xl-none">
+                    <a class="nav__link text-decoration-none" href="#"
+                      >Український центр у Барселоні
+                    </a>
+                  </li>
+                  <li class="nav__item d-xl-none">
+                    <a class="nav__link text-decoration-none" href="#"
+                      >Бібліотека</a
+                    >
+                  </li>
+                  <li class="nav__item d-xl-none">
+                    <a class="nav__link text-decoration-none" href="#"
+                      >Школа та садочок</a
+                    >
+                  </li>
+                  <li class="nav__item d-xl-none">
+                    <a class="nav__link text-decoration-none" href="#"
+                      >Український сад
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link text-decoration-none" href="#">
+                      Наші партнери
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link text-decoration-none" href="#">
+                      Звіти
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link text-decoration-none" href="#">
+                      Новини
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link text-decoration-none" href="#">
+                      Контакти
+                    </a>
+                  </li>
+                  <li>
+                    <div class="logo-social d-flex d-xl-none">
+                      <a href="#"
+                        ><img src="./img/icon-whatsapp.png" alt="Whatsapp"
+                      /></a>
+                      <a href="#"
+                        ><img src="./img/icon-facebook.png" alt="Facebook"
+                      /></a>
+                      <a href="#"
+                        ><img src="./img/icon-insta.png" alt="Instagram"
+                      /></a>
+                      <a href="#"
+                        ><img src="./img/icon-telegram.png" alt="Telegram"
+                      /></a>
+                      <a href="#"
+                        ><img src="./img/icon-youtube.png" alt="YouTube"
+                      /></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="logo-contacts d-flex d-xl-none">
+                      <a href="#" class="text-decoration-none text-black"
+                        ><img src="./img/icon-tel.png" alt="Телефон" /> +34 641
+                        35 22 51</a
+                      >
+                      <a href="#" class="text-decoration-none text-black"
+                        ><img
+                          src="./img/icon-place.png"
+                          alt="Містознаходження"
+                        />Carrer de Béjar, 38, Barcelona</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
