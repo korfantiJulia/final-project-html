@@ -139,6 +139,11 @@ a:hover .sprite-icon {
   padding-top: 32px;
   padding-bottom: 32px;
   gap: 10px;
+
+  @include mixins.respond(xl) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
 }
 
 .header-text {

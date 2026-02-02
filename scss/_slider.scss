@@ -1,0 +1,70 @@
+@use "variables";
+@use "mixins";
+
+.marquee {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: variables.$color-white;
+  height: 76px;
+  position: relative;
+  z-index: 2;
+  border-top: variables.$color-blue solid 5px;
+  border-bottom: variables.$color-yellow solid 5px;
+
+  @include mixins.respond(xl) {
+    height: 88px;
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-right: 25px;
+  font-size: 22px;
+  white-space: nowrap;
+  align-self: center;
+
+  @include mixins.respond(xl) {
+    font-size: 32px;
+  }
+}
+
+.ua-flag {
+  display: flex;
+  flex-direction: column;
+  width: 16px;
+  height: 12px;
+  align-self: center;
+}
+
+.ua-flag .blue {
+  flex: 1;
+  background-color: variables.$color-blue;
+}
+
+.ua-flag .yellow {
+  flex: 1;
+  background-color: variables.$color-yellow;
+}
+
+.marquee p {
+  margin: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
