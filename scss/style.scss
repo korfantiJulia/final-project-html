@@ -2,6 +2,10 @@
 @use "mixins";
 @use "header";
 @use "slider";
+@use "about";
+@use "goals";
+@use "numbers";
+@use "video";
 
 body {
   font-family: "Raleway";
@@ -10,7 +14,7 @@ body {
 .bg-hands {
   background-image: url("../img/hands.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -18,7 +22,7 @@ body {
 
 .decorated-bg {
   position: relative;
-  background: #fff;
+  background: variables.$color-white;
   overflow: visible;
 }
 
@@ -35,7 +39,7 @@ body {
 .decorated-bg::before {
   width: 355px;
   height: 355px;
-  background: #0d6efd; /* bootstrap blue */
+  background: #0d6efd;
   top: 456px;
   left: -151px;
 }
@@ -43,8 +47,8 @@ body {
 .decorated-bg::after {
   width: 355px;
   height: 355px;
-  background: #ffc107; /* bootstrap yellow */
-  bottom: 148px;
+  background: #ffc107;
+  top: 148px;
   right: -29px;
 }
 

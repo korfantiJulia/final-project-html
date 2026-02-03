@@ -1,0 +1,32 @@
+@use "variables";
+@use "mixins";
+
+.numbers {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.numbers-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.numbers-desc {
+  margin-bottom: 20px;
+
+  @include mixins.respond(xl) {
+    font-size: 18px;
+  }
+}
+
+.numbers-desc-bold {
+  margin-bottom: 30px;
+
+  @include mixins.respond(xl) {
+    font-size: 30px;
+  }
+}
+
+.numbers-cards-title {
+  font-size: 28px;
+}

@@ -1,0 +1,51 @@
+@use "variables";
+@use "mixins";
+
+.about {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @include mixins.respond(xl) {
+    margin-top: 69px;
+    margin-bottom: 100px;
+  }
+}
+
+.about-title {
+  margin-bottom: 20px;
+
+  @include mixins.respond(xl) {
+    margin-bottom: 30px;
+    font-size: 42px;
+  }
+}
+
+.about-text-first,
+.about-text-second {
+  margin-bottom: 10px;
+  @include mixins.respond(xl) {
+    font-size: 30px !important;
+  }
+}
+
+.about-text-first {
+  @include mixins.respond(xl) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-text-second {
+  @include mixins.respond(xl) {
+    margin-bottom: 0;
+  }
+}
+
+.about-accent {
+  color: variables.$color-blue;
+}
+
+.about-desc {
+  @include mixins.respond(xl) {
+    font-size: 18px;
+  }
+}
