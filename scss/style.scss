@@ -1,0 +1,54 @@
+@use "variables";
+@use "mixins";
+@use "header";
+@use "slider";
+
+body {
+  font-family: "Raleway";
+}
+
+.bg-hands {
+  background-image: url("../img/hands.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.decorated-bg {
+  position: relative;
+  background: #fff;
+  overflow: visible;
+}
+
+.decorated-bg::before,
+.decorated-bg::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 1;
+  z-index: 0;
+}
+
+.decorated-bg::before {
+  width: 355px;
+  height: 355px;
+  background: #0d6efd; /* bootstrap blue */
+  top: 456px;
+  left: -151px;
+}
+
+.decorated-bg::after {
+  width: 355px;
+  height: 355px;
+  background: #ffc107; /* bootstrap yellow */
+  bottom: 148px;
+  right: -29px;
+}
+
+.decorated-bg .container {
+  position: relative;
+  z-index: 1;
+}
