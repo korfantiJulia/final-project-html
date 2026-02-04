@@ -1,0 +1,12 @@
+@use "variables";
+@use "mixins";
+
+.projects-card {
+  width: 220px;
+}
+
+.projects-yellow {
+  background-color: variables.$color-yellow;
+  width: 220px;
+  height: 130px;
+}
