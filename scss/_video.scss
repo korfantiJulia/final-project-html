@@ -12,6 +12,11 @@
   border: 1px solid variables.$color-black;
   height: 53px;
   width: 220px;
+
+  &:hover {
+    border: 1px solid variables.$color-blue;
+    color: variables.$color-blue;
+  }
 }
 
 .video {
