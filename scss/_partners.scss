@@ -52,3 +52,29 @@
     }
   }
 }
+
+.partners-sm {
+  margin-bottom: 20px;
+}
+
+.partners-xl {
+  margin-bottom: 30px;
+}
+
+.partners-button {
+  @include mixins.button(transparent, variables.$color-black);
+  border: 1px solid variables.$color-black;
+  height: 53px;
+  width: 350px;
+
+  &:hover {
+    border: 1px solid variables.$color-blue;
+    color: variables.$color-blue;
+  }
+
+  @include mixins.respond(xl) {
+    font-size: 18px;
+    height: 47px;
+    width: 275px;
+  }
+}
