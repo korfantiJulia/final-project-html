@@ -1,0 +1,56 @@
+@use "variables";
+@use "mixins";
+
+.possibilities {
+  background-color: variables.$color-blue;
+  padding: 25px;
+  border-radius: 30px;
+
+  @include mixins.respond(xl) {
+    width: 50%;
+  }
+}
+
+.possibilities-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+
+  @include mixins.respond(xl) {
+    font-size: 42px;
+  }
+}
+
+.possibilities-list {
+  @include mixins.respond(xl) {
+    font-size: 20px;
+  }
+}
+
+.membership {
+  background-color: variables.$color-yellow;
+  padding: 25px;
+  border-radius: 30px;
+  gap: 20px;
+
+  @include mixins.respond(xl) {
+    width: 50%;
+  }
+}
+
+.membership-button {
+  max-width: 410px;
+
+  @include mixins.button(variables.$color-blue, variables.$color-white);
+  height: 53px;
+  padding: 17px 46px;
+  font-size: 16px;
+
+  &:hover {
+    background-color: variables.$color-blue-hover;
+  }
+
+  @include mixins.respond(xl) {
+    height: 58px;
+    max-width: 592px;
+  }
+}

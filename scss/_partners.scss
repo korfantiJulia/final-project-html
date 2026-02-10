@@ -1,0 +1,80 @@
+@use "variables";
+@use "mixins";
+
+.partners-title {
+  font-size: 28px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+  @include mixins.respond(xl) {
+    font-size: 42px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+.partners-card-yellow {
+  background-color: variables.$color-yellow;
+  height: 124px;
+
+  &-border {
+    background-color: variables.$color-yellow;
+    border-top-left-radius: 30px;
+    height: 124px;
+
+    &-right {
+      background-color: variables.$color-yellow;
+      border-top-right-radius: 30px;
+      height: 124px;
+    }
+
+    &-bottom {
+      background-color: variables.$color-yellow;
+      border-bottom-left-radius: 30px;
+      height: 124px;
+    }
+  }
+}
+
+.partners-card-blue {
+  background-color: variables.$color-blue;
+  height: 124px;
+
+  &-border {
+    background-color: variables.$color-blue;
+    border-top-right-radius: 30px;
+    height: 124px;
+
+    &-bottom {
+      background-color: variables.$color-blue;
+      border-bottom-left-radius: 30px;
+      height: 124px;
+    }
+  }
+}
+
+.partners-sm {
+  margin-bottom: 20px;
+}
+
+.partners-xl {
+  margin-bottom: 30px;
+}
+
+.partners-button {
+  @include mixins.button(transparent, variables.$color-black);
+  border: 1px solid variables.$color-black;
+  height: 53px;
+  width: 350px;
+
+  &:hover {
+    border: 1px solid variables.$color-blue;
+    color: variables.$color-blue;
+  }
+
+  @include mixins.respond(xl) {
+    font-size: 18px;
+    height: 47px;
+    width: 275px;
+  }
+}

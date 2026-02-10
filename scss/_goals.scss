@@ -1,0 +1,88 @@
+@use "variables";
+@use "mixins";
+
+.goals {
+  background-color: variables.$color-blue;
+  padding: 25px;
+  border-radius: 30px;
+  grid-area: 1 / 1 / 2 / 3;
+
+  @include mixins.respond(xl) {
+    padding: 56px;
+    grid-area: 1 / 1 / 5 / 2;
+  }
+}
+
+.goals-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+
+  @include mixins.respond(xl) {
+    font-size: 42px;
+  }
+}
+
+.goals-list {
+  @include mixins.respond(xl) {
+    font-size: 20px;
+  }
+}
+
+.icon-marker {
+  color: variables.$color-yellow;
+}
+
+// .goals-list li {
+//   position: relative;
+//   padding-left: 2.5rem;
+
+//   &::before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   width: 1.5rem;
+//   height: 1.5rem;
+//   display: inline-block;
+//   mask: url('./img/sprite.svg#icon-check') no-repeat center;
+//   -webkit-mask: url('./img/sprite.svg#icon-check') no-repeat center;
+//   background-color: #0d6efd; /* цвет маркера, можно менять */
+// }
+// }
+
+.goals-photo-1 {
+  grid-area: 2 / 1 / 3 / 2;
+  @include mixins.respond(xl) {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100%;
+  }
+}
+.goals-photo-2 {
+  grid-area: 2 / 2 / 3 / 3;
+  @include mixins.respond(xl) {
+    grid-area: 1 / 3 / 2 / 4;
+    height: 100%;
+  }
+}
+
+.goals-photo-3 {
+  grid-area: 3 / 1 / 4 / 3;
+  @include mixins.respond(xl) {
+    grid-area: 2 / 2 / 5 / 4;
+    height: 100%;
+  }
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  @include mixins.respond(xl) {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
