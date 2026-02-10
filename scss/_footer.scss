@@ -1,0 +1,31 @@
+@use "variables";
+@use "mixins";
+
+.footer-logo {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.footer-menu {
+  margin-bottom: 30px;
+}
+
+.footer-list {
+  --bs-gutter-y: 10px;
+  --bs-gutter-x: 20px;
+}
+
+.footer-link {
+  color: variables.$color-black;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: variables.$color-blue;
+  }
+}
+
+.footer-xl {
+  margin-top: 60px;
+  margin-bottom: 85px;
+  font-size: 18px;
+}

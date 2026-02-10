@@ -13,6 +13,7 @@
 @use "news";
 @use "team";
 @use "contacts";
+@use "footer";
 
 body {
   font-family: "Raleway";
@@ -61,5 +62,5 @@ body {
 
 .decorated-bg .container {
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 }
