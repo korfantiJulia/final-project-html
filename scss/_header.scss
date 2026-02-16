@@ -173,6 +173,7 @@ a:hover .sprite-icon {
     }
 
     @include mixins.respond(xl) {
+      width: 350px;
       height: 58px;
     }
   }
@@ -187,8 +188,13 @@ a:hover .sprite-icon {
     }
 
     @include mixins.respond(xl) {
+      width: 350px;
       height: 58px;
     }
+  }
+
+  @include mixins.respond(xl) {
+    gap: 20px;
   }
 }
 
