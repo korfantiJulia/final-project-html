@@ -1,6 +1,10 @@
 @use "variables";
 @use "mixins";
 
+header {
+  z-index: 10;
+}
+
 .header-info {
   border-bottom: variables.$color-black 1px solid;
   padding-bottom: 12px;
@@ -157,6 +161,7 @@ a:hover .sprite-icon {
 .header-button {
   gap: 10px;
   max-width: 460px;
+  width: 100%;
 
   &-call {
     @include mixins.button(variables.$color-blue, variables.$color-white);

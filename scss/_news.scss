@@ -60,7 +60,8 @@
   @include mixins.button(transparent, variables.$color-black);
   border: 1px solid variables.$color-black;
   height: 53px;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   margin-bottom: 80px;
 
   &:hover {

@@ -1,0 +1,28 @@
+@use "variables";
+@use "mixins";
+
+.about-humanitarian {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.about-humanitarian-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+
+  @include mixins.respond(xl) {
+    font-size: 42px;
+  }
+}
+
+.about-humanitarian-desc {
+  @include mixins.respond(xl) {
+    font-size: 18px;
+  }
+}
+
+.about-humanitarian-list {
+  @include mixins.respond(xl) {
+    font-size: 18px;
+  }
+}

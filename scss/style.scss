@@ -14,6 +14,8 @@
 @use "team";
 @use "contacts";
 @use "footer";
+@use "about-humanitarian";
+@use "who";
 
 body {
   font-family: "Raleway";
@@ -39,28 +41,45 @@ body {
   content: "";
   position: absolute;
   border-radius: 50%;
-  filter: blur(200px);
+  filter: blur(100px);
   opacity: 1;
   z-index: 0;
+
+  @include mixins.respond(xl) {
+    filter: blur(200px);
+  }
 }
 
 .decorated-bg::before {
-  width: 355px;
-  height: 355px;
+  width: 134px;
+  height: 134px;
   background: #0d6efd;
-  top: 456px;
-  left: -151px;
+  top: 200px;
+  left: -70px;
+
+  @include mixins.respond(xl) {
+    width: 355px;
+    height: 355px;
+    top: 456px;
+    left: -151px;
+  }
 }
 
 .decorated-bg::after {
-  width: 355px;
-  height: 355px;
+  width: 134px;
+  height: 134px;
   background: #ffc107;
-  top: 148px;
-  right: -29px;
+  top: 69px;
+  right: 65px;
+
+  @include mixins.respond(xl) {
+    width: 355px;
+    height: 355px;
+    top: 148px;
+    right: 0;
+  }
 }
 
 .decorated-bg .container {
   position: relative;
-  // z-index: 1;
 }

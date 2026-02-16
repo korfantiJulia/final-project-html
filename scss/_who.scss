@@ -1,0 +1,102 @@
+@use "variables";
+@use "mixins";
+
+.who {
+  background-color: variables.$color-blue;
+  padding: 25px;
+  border-radius: 30px;
+  gap: 15px;
+
+  @include mixins.respond(xl) {
+    width: 50%;
+  }
+}
+
+.who-title {
+  margin-bottom: 15px;
+  font-size: 28px;
+
+  @include mixins.respond(xl) {
+    font-size: 42px;
+  }
+}
+
+.working {
+  color: variables.$color-blue;
+  background-color: variables.$color-white;
+  border-radius: 15px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+
+  &-title {
+    font-size: 22px;
+  }
+
+  &-hours {
+    font-size: 24px;
+  }
+}
+
+.telegram-humanitarrian {
+  color: variables.$color-blue;
+}
+
+.center-button {
+  max-width: 410px;
+  width: 100%;
+
+  @include mixins.button(variables.$color-yellow, variables.$color-black);
+  height: 53px;
+  font-size: 20px;
+
+  &:hover {
+    background-color: variables.$color-yellow-hover;
+  }
+
+  @include mixins.respond(xl) {
+    height: 58px;
+    max-width: 598px;
+    font-size: 24px;
+  }
+}
+
+.helps {
+  background-color: variables.$color-yellow;
+  padding: 25px;
+  border-radius: 30px;
+  gap: 20px;
+
+  @include mixins.respond(xl) {
+    width: 50%;
+  }
+}
+
+.helps-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+
+  @include mixins.respond(xl) {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+}
+
+.helps-button {
+  max-width: 410px;
+  width: 100%;
+
+  @include mixins.button(variables.$color-blue, variables.$color-white);
+  height: 53px;
+  padding: 15px 80px;
+  font-size: 20px;
+
+  &:hover {
+    background-color: variables.$color-blue-hover;
+  }
+
+  @include mixins.respond(xl) {
+    height: 58px;
+    max-width: 598px;
+    font-size: 24px;
+  }
+}
